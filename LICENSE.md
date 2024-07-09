@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) smknstd <arnaud.becher@gmail.com>
+Copyright (c) Toneflix Code <code@toneflix.com.ng>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

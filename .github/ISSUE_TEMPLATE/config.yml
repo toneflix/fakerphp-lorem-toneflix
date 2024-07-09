@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-    - name: Ask a question
-      url: https://github.com/smknstd/fakerphp-picsum-images/discussions/new?category=q-a
-      about: Ask the community for help
-    - name: Request a feature
-      url: https://github.com/smknstd/fakerphp-picsum-images/discussions/new?category=ideas
-      about: Share ideas for new features
-    - name: Report a bug
-      url: https://github.com/smknstd/fakerphp-picsum-images/issues/new
-      about: Report a reproducable bug
+  - name: Ask a question
+    url: https://github.com/toneflix/fakerphp-lorem-toneflix/discussions/new?category=q-a
+    about: Ask the community for help
+  - name: Request a feature
+    url: https://github.com/toneflix/fakerphp-lorem-toneflix/discussions/new?category=ideas
+    about: Share ideas for new features
+  - name: Report a bug
+    url: https://github.com/toneflix/fakerphp-lorem-toneflix/issues/new
+    about: Report a reproducable bug
