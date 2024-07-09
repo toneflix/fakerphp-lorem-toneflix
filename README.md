@@ -1,4 +1,4 @@
-# Fakerphp Picsum Images
+# Fakerphp Lorem Toneflix Images
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/toneflix-code/fakerphp-lorem-toneflix.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/fakerphp-lorem-toneflix)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/toneflix-code/fakerphp-lorem-toneflix/run-tests.yml?branch=main&style=flat-square)](https://github.com/toneflix-code/fakerphp-lorem-toneflix/actions?query=workflow%3ATests+branch%3Amain)
