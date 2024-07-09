@@ -85,6 +85,7 @@ class FakerLoremToneflixProviderTest extends TestCase
         $this->assertFileExists($file);
         if (function_exists('getimagesize')) {
             list($width, $height, $type) = getimagesize($file);
+
             $this->assertEquals(640, $width);
             $this->assertEquals(480, $height);
             $this->assertEquals(constant('IMAGETYPE_JPEG'), $type);
