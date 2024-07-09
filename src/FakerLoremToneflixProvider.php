@@ -58,7 +58,7 @@ class FakerLoremToneflixProvider extends BaseProvider
         // Validate image format
         $imageFormats = static::getFormats();
 
-        if (!in_array(strtolower($format), $imageFormats, true)) {
+        if (! in_array(strtolower($format), $imageFormats, true)) {
             throw new \InvalidArgumentException(sprintf(
                 'Invalid image format "%s". Allowable formats are: %s',
                 $format,
@@ -69,7 +69,7 @@ class FakerLoremToneflixProvider extends BaseProvider
         $url = '';
 
         if ($category) {
-            if (!in_array(strtolower($category), static::$categories, true)) {
+            if (! in_array(strtolower($category), static::$categories, true)) {
                 throw new \InvalidArgumentException(sprintf(
                     'Invalid category "%s". Allowable categories are: %s',
                     $category,
@@ -120,7 +120,7 @@ class FakerLoremToneflixProvider extends BaseProvider
         $dir = null === $dir ? sys_get_temp_dir() : $dir; // GNU/Linux / OS X / Windows compatible
 
         // Validate directory path
-        if (!is_dir($dir) || !is_writable($dir)) {
+        if (! is_dir($dir) || ! is_writable($dir)) {
             throw new \InvalidArgumentException(sprintf('Cannot write to directory "%s"', $dir));
         }
 
@@ -142,7 +142,7 @@ class FakerLoremToneflixProvider extends BaseProvider
             fclose($fp);
             curl_close($ch);
 
-            if (!$success) {
+            if (! $success) {
                 unlink($filepath);
 
                 // could not contact the distant URL or HTTP error - fail silently.
@@ -152,7 +152,7 @@ class FakerLoremToneflixProvider extends BaseProvider
             // use remote fopen() via copy()
             $success = copy($url, $filepath);
 
-            if (!$success) {
+            if (! $success) {
                 // could not contact the distant URL or HTTP error - fail silently.
                 return false;
             }
