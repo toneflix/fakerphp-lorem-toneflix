@@ -188,11 +188,10 @@ class FakerLoremToneflixProvider extends BaseProvider
         ?bool $randomize,
         ?string $text,
     ): string {
-        $queryParams = [];
-        $queryString = '';
-
-        $queryParams['w'] = $width;
-        $queryParams['h'] = $height;
+        $queryParams = [
+            'w' => $width,
+            'h' => $height,
+        ];
 
         if ($grey) {
             $queryParams['greyscale'] = 'true';
