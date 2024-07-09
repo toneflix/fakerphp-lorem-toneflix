@@ -158,6 +158,7 @@ class FakerLoremToneflixProvider extends BaseProvider
             }
         } else {
             new \RuntimeException('The image formatter downloads an image from a remote HTTP server. Therefore, it requires that PHP can request remote hosts, either via cURL or fopen()');
+
             return false;
         }
 
