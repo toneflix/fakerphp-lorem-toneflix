@@ -209,9 +209,7 @@ class FakerLoremToneflixProvider extends BaseProvider
             $queryParams['text'] = $text;
         }
 
-        if (!empty($queryParams)) {
-            $queryString = '?' . http_build_query($queryParams);
-        }
+        $queryString = '?' . http_build_query($queryParams);
 
         return $queryString;
     }
