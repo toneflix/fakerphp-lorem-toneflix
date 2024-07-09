@@ -54,7 +54,7 @@ class FakerLoremToneflixProvider extends BaseProvider
         bool $grey = false,
         int $pixelate = null,
         string  $format = 'png'
-    ) {
+    ): string {
         // Validate image format
         $imageFormats = static::getFormats();
 
@@ -116,7 +116,7 @@ class FakerLoremToneflixProvider extends BaseProvider
         bool $grey = false,
         int $pixelate = null,
         string  $format = 'png'
-    ) {
+    ): string|bool {
         $dir = null === $dir ? sys_get_temp_dir() : $dir; // GNU/Linux / OS X / Windows compatible
 
         // Validate directory path
