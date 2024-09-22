@@ -24,7 +24,7 @@ class FakerLoremToneflixProvider extends BaseProvider
      *
      */
     protected static $categories = [
-        'poster', 'event', 'album', 'avatar', 'nature', 'people', 'technology'
+        'poster', 'event', 'album', 'avatar', 'nature', 'people', 'technology',
     ];
 
     /**
